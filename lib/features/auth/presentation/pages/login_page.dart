@@ -32,7 +32,8 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             children: [
               AppBarLogo(
-                height: size * 0.3, label: "Welcome back! Please sign in",
+                height: size * 0.3,
+                label: "Welcome back! Please sign in",
               ),
               AppSpacers.height32,
               Padding(
@@ -86,6 +87,8 @@ class _LoginPageState extends State<LoginPage> {
                                           if (_formKey.currentState!
                                               .validate()) {
                                             print("Sign In success");
+                                            Navigator.pushReplacementNamed(
+                                                context, '/main');
                                           }
                                         },
                                         child: Text("Sign In")),

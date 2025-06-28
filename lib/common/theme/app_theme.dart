@@ -6,7 +6,7 @@ class AppTheme {
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
-    // scaffoldBackgroundColor: Colors.transparent,
+    scaffoldBackgroundColor: AppColors.white,
     inputDecorationTheme: InputDecorationTheme(
       // contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       border: OutlineInputBorder(
@@ -37,11 +37,11 @@ class AppTheme {
     //         shape: RoundedRectangleBorder(
     //             borderRadius: BorderRadius.circular(12)))),
     textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 14),
+        style: TextButton.styleFrom(
+            padding: EdgeInsets.symmetric(vertical: 14),
             backgroundColor: AppColors.black,
             foregroundColor: Colors.white,
-            textStyle: TextStyle(
-                fontWeight: FontWeight.w500, fontSize: 20),
+            textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10)))),
   );
