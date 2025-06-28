@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_ecommerce_app/common/constants/app_colors.dart';
+import 'package:my_ecommerce_app/common/widgets/app_spacers.dart';
+import 'package:my_ecommerce_app/features/home/presentation/widgets/product_carousel.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,16 +19,20 @@ class _HomePageState extends State<HomePage> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              "TryShop",
-              style: TextStyle(
-                  color: AppColors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.w500),
+            Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Text(
+                "TryShop",
+                style: TextStyle(
+                    color: AppColors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500),
+              ),
             ),
             IconButton(
                 onPressed: () {},
                 icon: Badge.count(
+                  isLabelVisible: cartCounter > 0,
                   count: cartCounter,
                   child: Icon(
                     Icons.shopping_cart,
@@ -44,8 +50,10 @@ class _HomePageState extends State<HomePage> {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(horizontal: 18),
-          child: Column(),
+          padding: EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+          child: Column(
+            children: [ProductCarousel(), AppSpacers.width24],
+          ),
         ),
       ),
     );

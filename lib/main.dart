@@ -4,9 +4,14 @@ import 'package:my_ecommerce_app/common/widgets/custom_navigationbar.dart';
 import 'package:my_ecommerce_app/features/auth/presentation/pages/login_page.dart';
 import 'package:my_ecommerce_app/features/auth/presentation/pages/signup_page.dart';
 import 'package:my_ecommerce_app/features/home/presentation/pages/home_page.dart';
+import 'package:my_ecommerce_app/features/home/presentation/providers/home_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [ChangeNotifierProvider(create: (context) => HomeProvider())],
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
