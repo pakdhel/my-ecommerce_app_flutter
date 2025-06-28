@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_ecommerce_app/common/constants/app_colors.dart';
 import 'package:my_ecommerce_app/common/widgets/app_spacers.dart';
+import 'package:my_ecommerce_app/features/home/presentation/widgets/category.dart';
 import 'package:my_ecommerce_app/features/home/presentation/widgets/product_carousel.dart';
 
 class HomePage extends StatefulWidget {
@@ -52,7 +53,7 @@ class _HomePageState extends State<HomePage> {
         child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: 18, vertical: 12),
           child: Column(
-            children: [ProductCarousel(), AppSpacers.width24],
+            children: [ProductCarousel(), AppSpacers.height24, Category()],
           ),
         ),
       ),

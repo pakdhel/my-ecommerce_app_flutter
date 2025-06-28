@@ -26,6 +26,7 @@ flutter:
   assets:
     - assets/logos/trans_bg.png
     - assets/logos/trans_bg_1.png
+    - assets/images/category/
    
 
    
