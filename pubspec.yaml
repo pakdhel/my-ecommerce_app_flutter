@@ -15,6 +15,7 @@ dependencies:
   badges: ^3.1.2
   carousel_slider: ^5.1.1
   provider: ^6.1.5
+  iconify_flutter: ^0.0.7
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +28,7 @@ flutter:
     - assets/logos/trans_bg.png
     - assets/logos/trans_bg_1.png
     - assets/images/category/
+    - assets/images/product/
    
 
    
