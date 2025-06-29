@@ -33,12 +33,12 @@ class SpecialOffers extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 260,
+          height: 230,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
               SizedBox(
-                width: 200,
+                width: 180,
                 child: ProductCard(
                     image: "assets/images/product/headphone.jpg",
                     title: "Wireless Headphones",
@@ -46,7 +46,7 @@ class SpecialOffers extends StatelessWidget {
                     rating: "4.5"),
               ),
               SizedBox(
-                width: 200,
+                width: 180,
                 child: ProductCard(
                     image: "assets/images/product/phone.jpg",
                     title: "Mobile Phone",
@@ -54,7 +54,7 @@ class SpecialOffers extends StatelessWidget {
                     rating: "4.9"),
               ),
               SizedBox(
-                width: 200,
+                width: 180,
                 child: ProductCard(
                     image: "assets/images/product/shoes.jpg",
                     title: "Running Shoes",
@@ -62,7 +62,7 @@ class SpecialOffers extends StatelessWidget {
                     rating: "4.9"),
               ),
               SizedBox(
-                width: 200,
+                width: 180,
                 child: ProductCard(
                     image: "assets/images/product/watch.jpg",
                     title: "Classic Watch",

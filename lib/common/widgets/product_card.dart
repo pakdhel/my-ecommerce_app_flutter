@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:my_ecommerce_app/common/constants/app_colors.dart';
 import 'package:my_ecommerce_app/common/widgets/app_spacers.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
@@ -33,7 +34,7 @@ class ProductCard extends StatelessWidget {
                 topLeft: Radius.circular(10), topRight: Radius.circular(10)),
             child: Image.asset(
               image,
-              height: 180,
+              height: 150,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
@@ -57,24 +58,32 @@ class ProductCard extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          "Rp",
-                          style: TextStyle(
-                              color: AppColors.teal,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500),
-                        ),
-                        Text(
-                          price,
-                          style: TextStyle(
-                              color: AppColors.teal,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500),
-                        ),
-                      ],
+                    Expanded(
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            "Rp",
+                            style: TextStyle(
+                                color: AppColors.teal,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500),
+                          ),
+                          Flexible(
+                            child: Text(
+                              price,
+                              style: TextStyle(
+                                  color: AppColors.teal,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
+                    AppSpacers.width4,
                     Row(
                       children: [
                         Iconify(
