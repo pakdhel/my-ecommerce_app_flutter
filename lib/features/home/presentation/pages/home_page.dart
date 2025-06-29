@@ -3,6 +3,7 @@ import 'package:my_ecommerce_app/common/constants/app_colors.dart';
 import 'package:my_ecommerce_app/common/widgets/app_spacers.dart';
 import 'package:my_ecommerce_app/features/home/presentation/widgets/category.dart';
 import 'package:my_ecommerce_app/features/home/presentation/widgets/product_carousel.dart';
+import 'package:my_ecommerce_app/features/home/presentation/widgets/recommendation_section.dart';
 import 'package:my_ecommerce_app/features/home/presentation/widgets/special_offers.dart';
 
 class HomePage extends StatefulWidget {
@@ -45,6 +46,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         backgroundColor: AppColors.black,
+        scrolledUnderElevation: 0,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(30),
@@ -59,7 +61,9 @@ class _HomePageState extends State<HomePage> {
               AppSpacers.height24,
               Category(),
               AppSpacers.height24,
-              SpecialOffers()
+              SpecialOffers(),
+              AppSpacers.height24,
+              RecommendationSection()
             ],
           ),
         ),

@@ -33,32 +33,43 @@ class SpecialOffers extends StatelessWidget {
                 ))
           ],
         ),
-        AppSpacers.height16,
         SizedBox(
           height: 260,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
-              ProductCard(
-                  image: "assets/images/product/headphone.jpg",
-                  title: "Wireless Headphones",
-                  price: "129.000",
-                  rating: "4.5"),
-              ProductCard(
-                  image: "assets/images/product/phone.jpg",
-                  title: "Mobile Phone",
-                  price: "11.129.000",
-                  rating: "4.9"),
-              ProductCard(
-                  image: "assets/images/product/shoes.jpg",
-                  title: "Running Shoes",
-                  price: "329.000",
-                  rating: "4.9"),
-              ProductCard(
-                  image: "assets/images/product/watch.jpg",
-                  title: "Classic Watch",
-                  price: "2.300.000",
-                  rating: "4.9"),
+              SizedBox(
+                width: 200,
+                child: ProductCard(
+                    image: "assets/images/product/headphone.jpg",
+                    title: "Wireless Headphones",
+                    price: "129.000",
+                    rating: "4.5"),
+              ),
+              SizedBox(
+                width: 200,
+                child: ProductCard(
+                    image: "assets/images/product/phone.jpg",
+                    title: "Mobile Phone",
+                    price: "11.129.000",
+                    rating: "4.9"),
+              ),
+              SizedBox(
+                width: 200,
+                child: ProductCard(
+                    image: "assets/images/product/shoes.jpg",
+                    title: "Running Shoes",
+                    price: "329.000",
+                    rating: "4.9"),
+              ),
+              SizedBox(
+                width: 200,
+                child: ProductCard(
+                    image: "assets/images/product/watch.jpg",
+                    title: "Classic Watch",
+                    price: "2.300.000",
+                    rating: "4.9"),
+              ),
             ],
           ),
         )
