@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_ecommerce_app/common/constants/app_colors.dart';
-import 'package:my_ecommerce_app/common/widgets/app_spacers.dart';
 import 'package:my_ecommerce_app/common/widgets/product_card.dart';
 
 class SpecialOffers extends StatelessWidget {
