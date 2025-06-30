@@ -73,9 +73,9 @@ class OthersSection extends StatelessWidget {
             physics: NeverScrollableScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 0.7,
-                crossAxisSpacing: 1,
-                mainAxisSpacing: 1),
+                childAspectRatio: 0.85,
+                crossAxisSpacing: 2,
+                mainAxisSpacing: 2),
             itemCount: products.length,
             itemBuilder: (context, index) {
               final product = products[index];

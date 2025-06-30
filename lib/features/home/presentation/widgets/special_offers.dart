@@ -33,7 +33,7 @@ class SpecialOffers extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 230,
+          height: 200,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
