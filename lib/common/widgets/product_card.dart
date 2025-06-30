@@ -18,11 +18,8 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return
-        // SizedBox(
-        //   width: 200,
-        //   child:
-        Card(
+    return Card(
+      color: AppColors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       elevation: 2,
       child: Column(
@@ -41,6 +38,7 @@ class ProductCard extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.only(right: 10, left: 10, top: 16),
+            // decoration: BoxDecoration(color: AppColors.white),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -102,6 +100,5 @@ class ProductCard extends StatelessWidget {
         ],
       ),
     );
-    // );
   }
 }
