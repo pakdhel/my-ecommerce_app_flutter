@@ -8,8 +8,9 @@ class PercentDiscount extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.symmetric(horizontal: 8),
       decoration: BoxDecoration(
-          color: AppColors.red.withOpacity(0.2),
+          color: const Color.fromRGBO(255, 228, 228, 1),
           borderRadius: BorderRadius.circular(100)),
       child: Row(
         children: [
