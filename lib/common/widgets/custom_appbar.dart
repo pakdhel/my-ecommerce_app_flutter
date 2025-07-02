@@ -25,7 +25,10 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
             ),
           ),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                print("object");
+                Navigator.pushNamed(context, '/cart_page');
+              },
               icon: Badge.count(
                 isLabelVisible: cartCounter > 0,
                 count: cartCounter,

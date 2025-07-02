@@ -13,6 +13,7 @@ class PercentDiscount extends StatelessWidget {
           color: const Color.fromRGBO(255, 228, 228, 1),
           borderRadius: BorderRadius.circular(100)),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Text(
             "Save",
@@ -23,7 +24,12 @@ class PercentDiscount extends StatelessWidget {
             percent,
             style: TextStyle(
                 color: AppColors.red, fontSize: 8, fontWeight: FontWeight.w500),
-          )
+          ),
+          Text(
+            "%",
+            style: TextStyle(
+                color: AppColors.red, fontSize: 8, fontWeight: FontWeight.w500),
+          ),
         ],
       ),
     );
