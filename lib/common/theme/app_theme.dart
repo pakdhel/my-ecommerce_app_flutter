@@ -28,14 +28,16 @@ class AppTheme {
       ),
       errorStyle: TextStyle(),
     ),
-    // elevatedButtonTheme: ElevatedButtonThemeData(
-    //     style: ElevatedButton.styleFrom(
-    //         backgroundColor: AppColors.primaryColorButton,
-    //         foregroundColor: Colors.white,
-    //         textStyle: TextStyle(
-    //             fontFamily: 'Lato', fontWeight: FontWeight.w700, fontSize: 16),
-    //         shape: RoundedRectangleBorder(
-    //             borderRadius: BorderRadius.circular(12)))),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.gold,
+            foregroundColor: Colors.white,
+            textStyle: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 16,
+                fontFamily: 'Poppins'),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12)))),
     textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
             padding: EdgeInsets.symmetric(vertical: 14),
@@ -44,5 +46,7 @@ class AppTheme {
             textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10)))),
+    dividerTheme:
+        DividerThemeData(space: 32, thickness: 0.2, color: AppColors.gray),
   );
 }

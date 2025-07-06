@@ -7,6 +7,7 @@ class PriceText extends StatelessWidget {
   final FontWeight fontWeight;
   final Color color;
   final bool isStrikethrough;
+  final TextAlign textAlign;
   const PriceText({
     super.key,
     required this.value,
@@ -14,11 +15,15 @@ class PriceText extends StatelessWidget {
     this.fontWeight = FontWeight.w500,
     required this.color,
     this.isStrikethrough = false,
+    this.textAlign = TextAlign.start,
   });
 
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: textAlign == TextAlign.end
+          ? MainAxisAlignment.end
+          : MainAxisAlignment.start,
       children: [
         Text(
           'Rp',
@@ -31,18 +36,16 @@ class PriceText extends StatelessWidget {
           ),
         ),
         const SizedBox(width: 2),
-        Expanded(
-          child: Text(
-            value,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontSize: fontSize,
-              fontWeight: fontWeight,
-              decoration: isStrikethrough ? TextDecoration.lineThrough : null,
-              decorationColor: color,
-              color: color,
-            ),
+        Text(
+          value,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            fontSize: fontSize,
+            fontWeight: fontWeight,
+            decoration: isStrikethrough ? TextDecoration.lineThrough : null,
+            decorationColor: color,
+            color: color,
           ),
         ),
       ],

@@ -6,6 +6,7 @@ import 'package:my_ecommerce_app/features/auth/presentation/pages/signup_page.da
 import 'package:my_ecommerce_app/features/cart/presentation/pages/cart_page.dart';
 import 'package:my_ecommerce_app/features/home/presentation/pages/home_page.dart';
 import 'package:my_ecommerce_app/features/home/presentation/providers/home_provider.dart';
+import 'package:my_ecommerce_app/features/payment/presentation/pages/payment_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         '/signup_page': (context) => SignupPage(),
         '/home_page': (context) => HomePage(),
         '/cart_page': (context) => CartPage(),
+        '/payment_page': (context) => PaymentPage(),
         '/main': (context) => CustomNavigationBar()
       },
     );

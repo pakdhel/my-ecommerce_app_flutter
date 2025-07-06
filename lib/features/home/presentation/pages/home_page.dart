@@ -4,7 +4,7 @@ import 'package:my_ecommerce_app/common/widgets/app_spacers.dart';
 import 'package:my_ecommerce_app/common/widgets/custom_appbar.dart';
 import 'package:my_ecommerce_app/features/home/presentation/widgets/category.dart';
 import 'package:my_ecommerce_app/features/home/presentation/widgets/product_carousel.dart';
-import 'package:my_ecommerce_app/features/home/presentation/widgets/recommendation_section.dart';
+import 'package:my_ecommerce_app/common/widgets/recommendation_section.dart';
 import 'package:my_ecommerce_app/features/home/presentation/widgets/special_offers.dart';
 
 class HomePage extends StatefulWidget {
